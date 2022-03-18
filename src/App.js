@@ -5,6 +5,7 @@ import {Paragraph} from "./components/Paragraph";
 import {Input} from "./components/Input";
 import { MySelf } from './components/MySelf';
 import {Counter} from './components/Counter';
+import Container from './components/container/Container';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <MySelf name = "Talata" age = {32} gender = "female" />
       <MySelf name = "Dorcas" age = {20} gender = "female" />
       <Counter/>
+      <Container/>
+      {/* <Card/> */}
     </div>
   );
 }

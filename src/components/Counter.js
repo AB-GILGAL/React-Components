@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from "@mui/material/Button";
 
 export const Counter = () => {
     const [value, setValue] = React.useState(0);
@@ -14,7 +15,7 @@ export const Counter = () => {
     return (
     <div>
     <h1>{value}</h1>
-    <button onClick = {handleIncrease} > Increase </button>
-    <button onClick = {handleDecrease} > Decrease </button>
+    <Button variant = "outlined" onClick = {handleIncrease} > Increase </Button>
+    <Button variant = "contained" color = "error" onClick = {handleDecrease} > Decrease </Button>
     </div>
     )};
